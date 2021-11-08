@@ -12,3 +12,29 @@
 // 3. Stampare Nome, cognome, età e codice giocatore.
 // 4. Creare un array di 10 giocatori di basket, con le regole sopra indicate
 // 5. Creare un nuovo array con i giocatori che hanno una media di punti superiore a 35 e la percentuale di successo per i tiri da 3 punti superiore all’80%.
+
+const gruppo = [
+    {
+        codice: 'codice',
+        nome: 'nome1',
+        cognome: 'cognome1',
+        età: 25,
+        mediapunti: '',
+        punti3: '',
+    },
+]
+// costanti alfabeto e numeri
+
+
+
+let codice = ''
+for(let i = 0; i < 3; i++){
+    codice += Math.floor(Math.random()* 9) + 1
+    const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    const alfabetoLenght = alfabeto.length
+    codice += alfabeto.charAt(Math.floor(Math.random()* alfabetoLenght))
+}
+console.log(codice);
+
+
+
