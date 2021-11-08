@@ -13,28 +13,109 @@
 // 4. Creare un array di 10 giocatori di basket, con le regole sopra indicate
 // 5. Creare un nuovo array con i giocatori che hanno una media di punti superiore a 35 e la percentuale di successo per i tiri da 3 punti superiore all’80%.
 
+
+//Definizione codice giocatore
+
+// Definizione media punti e percentuali
+
+// Creazione gruppo player iniziale
 const gruppo = [
-    {
-        codice: 'codice',
+     {
+        code: randomcode(),
         nome: 'nome1',
         cognome: 'cognome1',
         età: 25,
-        mediapunti: '',
-        punti3: '',
+        media: mediapunti(0,50),
+        triple: mediapunti(0,100),
+    },
+    {
+        code: randomcode(),
+        nome: 'nome2',
+        cognome: 'cognome2',
+        età: 25,
+        media: mediapunti(0,50),
+        triple: mediapunti(0,100),
+    },
+    {
+        code: randomcode(),
+        nome: 'nome3',
+        cognome: 'cognome3',
+        età: 25,
+        media: mediapunti(0,50),
+        triple: mediapunti(0,100),
+    },
+    {
+        code: randomcode(),
+        nome: 'nome4',
+        cognome: 'cognome4',
+        età: 25,
+        media: mediapunti(0,50),
+        triple: mediapunti(0,100),
+    },
+    {
+        code: randomcode(),
+        nome: 'nome5',
+        cognome: 'cognome5',
+        età: 25,
+        media: mediapunti(0,50),
+        triple: mediapunti(0,100),
+    },
+    {
+        code: randomcode(),
+        nome: 'nome6',
+        cognome: 'cognome6',
+        età: 25,
+        media: mediapunti(0,50),
+        triple: mediapunti(0,100),
+    },
+    {
+        code: randomcode(),
+        nome: 'nome7',
+        cognome: 'cognome7',
+        età: 25,
+        media: mediapunti(0,50),
+        triple: mediapunti(0,100),
+    },
+    {
+        code: randomcode(),
+        nome: 'nome8',
+        cognome: 'cognome8',
+        età: 25,
+        media: mediapunti(0,50),
+        triple: mediapunti(0,100),
+    },
+    {
+        code: randomcode(),
+        nome: 'nome9',
+        cognome: 'cognome9',
+        età: 25,
+        media: mediapunti(0,50),
+        triple: mediapunti(0,100),
+    },
+    {
+        code: randomcode(),
+        nome: 'nome10',
+        cognome: 'cognome10',
+        età: 25,
+        media: mediapunti(0,50),
+        triple: mediapunti(0,100),
     },
 ]
-// costanti alfabeto e numeri
 
+console.log(gruppo
+    );
+// Fuzioni
+function mediapunti (min, max) {
+    return parseInt(Math.random() * (max - min) + min);
+  }
 
-
-let codice = ''
-for(let i = 0; i < 3; i++){
-    codice += Math.floor(Math.random()* 9) + 1
-    const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-    const alfabetoLenght = alfabeto.length
-    codice += alfabeto.charAt(Math.floor(Math.random()* alfabetoLenght))
+function randomcode (){
+        let code = ''
+    for(let i = 0; i < 3; i++){
+        code += Math.floor(Math.random()* 9) + 1
+        const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        const alfabetoLenght = alfabeto.length
+        code += alfabeto.charAt(Math.floor(Math.random()* alfabetoLenght))
+    }
+    return code
 }
-console.log(codice);
-
-
-
