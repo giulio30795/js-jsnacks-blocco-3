@@ -102,15 +102,21 @@ const gruppo = [
     },
 ]
 
-console.log(gruppo
-    );
+console.log(gruppo);
+
+const bestPlayer = gruppo.filter( element => element.media > 35 && element.triple > 80)
+
+console.log(bestPlayer);
+
+
 // Fuzioni
+
 function mediapunti (min, max) {
     return parseInt(Math.random() * (max - min) + min);
   }
 
 function randomcode (){
-        let code = ''
+    let code = ''
     for(let i = 0; i < 3; i++){
         code += Math.floor(Math.random()* 9) + 1
         const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
