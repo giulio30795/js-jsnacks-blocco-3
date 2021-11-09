@@ -120,8 +120,7 @@ function randomcode (){
     for(let i = 0; i < 3; i++){
         code += Math.floor(Math.random()* 9) + 1
         const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-        const alfabetoLenght = alfabeto.length
-        code += alfabeto.charAt(Math.floor(Math.random()* alfabetoLenght))
+        code += alfabeto.charAt(Math.floor(Math.random() * alfabeto.length)- 1 )
     }
     return code
 }
