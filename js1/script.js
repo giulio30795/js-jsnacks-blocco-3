@@ -118,9 +118,9 @@ function mediapunti (min, max) {
 function randomcode (){
     let code = ''
     for(let i = 0; i < 3; i++){
-        code += Math.floor(Math.random()* 9) + 1
+        code += (mediapunti (0, 9))
         const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-        code += alfabeto.charAt(Math.floor(Math.random() * alfabeto.length)- 1 )
+        code += alfabeto.charAt(mediapunti ( 0, alfabeto.length - 1 ))
     }
     return code
 }
