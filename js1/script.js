@@ -112,7 +112,7 @@ console.log(bestPlayer);
 // Fuzioni
 
 function mediapunti (min, max) {
-    return parseInt(Math.random() * (max - min) + min);
+    return parseInt(Math.random() * (max - min + 1) + min);
   }
 
 function randomcode (){
